@@ -2,7 +2,7 @@ const planten = [
   {
     id: 1,
     naam: "plantje",
-    prijs: 420.67,
+    prijs: "$420.67",
     categorie: "Binnenplanten",
     afbeelding: "images/@deftonesofme.jpg",
     beschrijving: "Plant."

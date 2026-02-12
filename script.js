@@ -13,7 +13,7 @@ function toonPlanten() {
 
     productDiv.innerHTML = `
       <img src="${plant.afbeelding}" alt="Foto van ${plant.naam}" loading="lazy">
-      <p>${plant.naam}<br />${plant.prijsTekst}</p>
+      <p>${plant.naam}<br />${plant.prijs}</p>
       <button class="cart-button" onclick="voegToe(${plant.id})">
         🛒 Bestellen
       </button>

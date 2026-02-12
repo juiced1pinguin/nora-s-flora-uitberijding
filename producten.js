@@ -4,8 +4,12 @@ const planten = [
     naam: "plantje",
     prijs: 420.67,
     categorie: "Binnenplanten",
-    afbeelding: "images/plantjes.jpg",
+    afbeelding: "images/@deftonesofme.jpg",
     beschrijving: "Plant."
+
   },
   
 ];
+
+
+

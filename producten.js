@@ -2,65 +2,66 @@ const planten = [
   {
     id: 1,
     naam: "Goon plantje ",
-    prijs: 3.50,
+    prijs: 3.5,
     categorie: "Tulpen",
     afbeelding: "images/@deftonesofme.jpg",
-    beschrijving: "Prachtige goon plantje."
+    beschrijving: "Prachtige goon plantje.",
   },
   {
     id: 2,
     naam: "Goon cat",
-    prijs: 2.00,
+    prijs: 2.0,
     categorie: "dier",
     afbeelding: "images/20250304_165600.jpg",
-    beschrijving: "Vrolijke goon cat die je huisewerk opeet."
+    beschrijving: "Vrolijke goon cat die je huisewerk opeet.",
   },
   {
     id: 3,
     naam: "lebrawn ",
-    prijs: 5.00,
+    prijs: 5.0,
     categorie: "bal",
-    afbeelding: "images/How Are Your Favorite Celebrities Spending Thanksgiving Weekend_.jpg",
-    beschrijving: "Prachtige cactus, gemakkelijk te onderhouden."
+    afbeelding:
+      "images/How Are Your Favorite Celebrities Spending Thanksgiving Weekend_.jpg",
+    beschrijving: "Prachtige cactus, gemakkelijk te onderhouden.",
   },
   {
     id: 4,
     naam: "Gras uit Toronto",
-    prijs: 4.50,
+    prijs: 4.5,
     categorie: "Importbloemen",
-    afbeelding: "images/pexels-nextvoyage-457937.jpg",
-    beschrijving: "Speciaal geïmporteerd gras uit Canada."
+    afbeelding: "images/pexels-nextvoyage-457937.webp",
+    beschrijving: "Speciaal geïmporteerd gras uit Canada.",
   },
   {
     id: 5,
     naam: "Paarse Allium Bloemen",
-    prijs: 3.00,
+    prijs: 3.0,
     categorie: "Allium",
-    afbeelding: "images/pexels-mikebirdy-109828.jpg",
-    beschrijving: "Elegante paarse allium, gratis bij bouquet."
+    afbeelding: "images/pexels-mikebirdy-109828.webp",
+    beschrijving: "Elegante paarse allium, gratis bij bouquet.",
   },
   {
     id: 6,
     naam: "Vetbloemen Mix",
-    prijs: 6.00,
+    prijs: 6.0,
     categorie: "Vetplanten",
-    afbeelding: "images/pexels-maureen-piecesphotography-1207978.jpg",
-    beschrijving: "Mix van verschillende vetbloemen, 3+1 gratis."
+    afbeelding: "images/pexels-maureen-piecesphotography-1207978.webp",
+    beschrijving: "Mix van verschillende vetbloemen, 3+1 gratis.",
   },
   {
     id: 7,
     naam: "Rozen Boeket",
-    prijs: 8.50,
+    prijs: 8.5,
     categorie: "Rozen",
-    afbeelding: "images/pexels-pixabay-54267.jpg",
-    beschrijving: "Elegant rozenboeket in verschillende kleuren."
+    afbeelding: "images/pexels-pixabay-54267.webp",
+    beschrijving: "Elegant rozenboeket in verschillende kleuren.",
   },
   {
     id: 8,
     naam: "Dahlias",
-    prijs: 4.00,
+    prijs: 4.0,
     categorie: "Dahlias",
-    afbeelding: "images/pexels-scottwebb-403571.jpg",
-    beschrijving: "Kleurrijke dahlias, perfect voor elk seizoen."
-  }
+    afbeelding: "images/pexels-scottwebb-403571.webp",
+    beschrijving: "Kleurrijke dahlias, perfect voor elk seizoen.",
+  },
 ];

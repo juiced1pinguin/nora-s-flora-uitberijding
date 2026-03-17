@@ -63,4 +63,5 @@ const planten = [
     afbeelding: "images/pexels-scottwebb-403571.jpg",
     beschrijving: "Kleurrijke dahlias, perfect voor elk seizoen."
   }
+
 ];

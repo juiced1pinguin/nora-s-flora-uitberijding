@@ -8,112 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <style>
-        main {
-            background-color: #f6f7e3;
-            padding: 40px 20px;
-            min-height: 60vh;
-        }
-
-        #cartContainer {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #d9edb5;
-            padding: 30px;
-            border-radius: 8px;
-            color: #000000;
-        }
-
-        #cartContainer h1 {
-            text-align: center;
-            color: #3f593c;
-        }
-
-        #cartItems {
-            margin: 20px 0;
-        }
-
-        #cartItems table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        #cartItems th,
-        #cartItems td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #999;
-        }
-
-        #cartItems th {
-            background-color: #3f593c;
-            color: #ffffff;
-        }
-
-        #cartItems button {
-            background-color: #ff6b6b;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #cartItems button:hover {
-            background-color: #ff5252;
-        }
-
-        .cart-total {
-            text-align: right;
-            font-size: 20px;
-            font-weight: bold;
-            color: #3f593c;
-            margin: 20px 0;
-        }
-
-        .empty-cart {
-            text-align: center;
-            color: #3f593c;
-            font-size: 18px;
-            padding: 40px;
-        }
-
-        .cart-actions {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-
-        .cart-actions button {
-            background-color: #3f593c;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .cart-actions button:hover {
-            background-color: #283f25;
-        }
-
-        .cart-actions a {
-            display: inline-block;
-            background-color: #3f593c;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .cart-actions a:hover {
-            background-color: #283f25;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -122,10 +17,10 @@
             <img id="imgLogo" src="images/Nora'sFloraLogo.png" alt="Nora'sFloraLogo" />
         </div>
         <div id="divNavigatie">
-            <a href="index.html">| Home |</a>
-            <a href="assortiment.html">| Assortiment |</a>
-            <a href="contact.html">| Contact |</a>
-            <a href="shoppingcart.html">| Winkelmandje |</a>
+            <a href="index.html">Home</a>
+            <a href="assortiment.html">Assortiment</a>
+            <a href="contact.html">Contact</a>
+            <a href="shoppingcart.html">Winkelmandje</a>
         </div>
     </header>
 
@@ -165,7 +60,7 @@
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
             if (cart.length === 0) {
-                cartContainer.innerHTML = '<div class="empty-cart">Je winkelmandje is leeg domme kut. <br><a href="assortiment.html">Ga naar assortiment</a></div>';
+                cartContainer.innerHTML = '<div class="empty-cart">Je winkelmandje is leeg. <br><a href="assortiment.html">Ga naar assortiment</a></div>';
                 return;
             }
 

@@ -31,6 +31,16 @@ body {
   color: #ffffff;
   margin: 0 10px;
   text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+#divNavigatie a:hover {
+  background-color: #ffffff;
+  color: #084f23;
+  border: 1px solid #084f23;
 }
 
 #imgFlowers {
@@ -137,6 +147,15 @@ body {
   max-width: 900px;
   margin: 30px auto;
   padding: 10px;
+
+}
+
+body {
+  background-color: #f6f7e3;
+}
+
+footer {
+  border-top: 40px solid #3f593c;
 }
 
 #producten {
@@ -231,6 +250,113 @@ body {
   padding: 7px;
   width: 280px;
 }
+
+
+main {
+  background-color: #f6f7e3;
+  padding: 40px 20px;
+  min-height: 60vh;
+}
+
+#cartContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #d9edb5;
+  padding: 30px;
+  border-radius: 8px;
+  color: #000000;
+}
+
+#cartContainer h1 {
+  text-align: center;
+  color: #3f593c;
+}
+
+#cartItems {
+  margin: 20px 0;
+}
+
+#cartItems table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#cartItems th,
+#cartItems td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #999;
+}
+
+#cartItems th {
+  background-color: #3f593c;
+  color: #ffffff;
+}
+
+#cartItems button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cartItems button:hover {
+  background-color: #ff5252;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3f593c;
+  margin: 20px 0;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #3f593c;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cart-actions button {
+  background-color: #3f593c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-actions button:hover {
+  background-color: #283f25;
+}
+
+.cart-actions a {
+  display: inline-block;
+  background-color: #3f593c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.cart-actions a:hover {
+  background-color: #283f25;
+}
+
 
 /* 
 FFFFFF

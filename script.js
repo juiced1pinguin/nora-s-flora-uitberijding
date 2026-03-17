@@ -39,7 +39,7 @@ function voegToe(id) {
 function addToCart(id) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const product = planten.find(p => p.id === id); // gemaakt was eerst plantjes
+  const product = planten.find(p => p.id === id);
   
   if (product) {
     cart.push(product);

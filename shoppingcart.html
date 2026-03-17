@@ -54,46 +54,7 @@
     </footer>
 
     <script src="producten.js"></script>
-    <script>
-        function displayCart() {
-            const cartContainer = document.getElementById("cartItems");
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-            if (cart.length === 0) {
-                cartContainer.innerHTML = '<div class="empty-cart">Je winkelmandje is leeg. <br><a href="assortiment.html">Ga naar assortiment</a></div>';
-                return;
-            }
-
-            let cartHTML = "<table><tr><th>Product</th><th>Prijs</th></tr>";
-            let total = 0;
-
-            cart.forEach((item, index) => {
-                cartHTML += `
-                    <tr>
-                        <td>${item.naam}</td>
-                        <td>€${item.prijs.toFixed(2)}</td>
-                     
-                    </tr>
-                `;
-                total += item.prijs;
-            });
-
-            cartHTML += `</table><div class="cart-total">Totaal: €${total.toFixed(2)}</div>`;
-            cartContainer.innerHTML = cartHTML;
-        }
-
-      
-
-        function clearCart() {
-            if (confirm("Weet je zeker dat je je winkelmandje wilt leegmaken?")) {
-                localStorage.removeItem("cart");
-                displayCart();
-            }
-        }
-
-
-        displayCart();
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

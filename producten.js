@@ -5,7 +5,7 @@ const planten = [
     prijs: 3.5,
     categorie: "Tulpen",
     afbeelding: "images/pexels-valeriya-1961778.webp",
-    beschrijving: "Prachtige goon plantje.",
+    beschrijving: "Prachtige tulpen.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const planten = [
     prijs: 18.0,
     categorie: "Bouquet",
     afbeelding: "images/pexels-secret-garden-333350-931176.webp",
-    beschrijving: "Prachtige cactus, gemakkelijk te onderhouden.",
+    beschrijving: "Prachtige roze bloemen.",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const planten = [
     prijs: 20.5,
     categorie: "Importbloemen",
     afbeelding: "images/pexels-valeriya-1484657.webp",
-    beschrijving: "Speciaal geïmporteerd gras uit Canada.",
+    beschrijving: "Prachtige lente bloemen.",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const planten = [
     prijs: 8.5,
     categorie: "lentebloemen",
     afbeelding: "images/pexels-jos-van-ouwerkerk-377363-1075960.webp",
-    beschrijving: "Elegant rozenboeket in verschillende kleuren.",
+    beschrijving: "Prachtige lente bloemen.",
   },
   {
     id: 8,

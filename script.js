@@ -2,14 +2,14 @@
 const productGrid = document.getElementById('producten');
 
 function toonPlanten() {
-  if (!productGrid) return; 
-  
+  if (!productGrid) return;
+
   productGrid.innerHTML = "";
 
   planten.forEach(plant => {
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
-    
+
     if (plant.groot) {
       productDiv.classList.add('product-large');
     }
@@ -40,7 +40,7 @@ function addToCart(id) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   const product = planten.find(p => p.id === id);
-  
+
   if (product) {
     cart.push(product);
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -83,35 +83,38 @@ function removeFromCart(index) {
 
 function displayCart() {
   const cartContainer = document.getElementById("cartItems");
-  if (!cartContainer) return;
-
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
-    cartContainer.innerHTML = "<p>Je winkelmandje is leeg</p>";
+    cartContainer.innerHTML = '<div class="empty-cart">Je winkelmandje is leeg. <br><a href="assortiment.html">Ga naar assortiment</a></div>';
     return;
   }
 
-  let cartHTML = "<table><tr><th>Product</th><th>Prijs</th><th>Actie</th></tr>";
+  let cartHTML = "<table><tr><th>Product</th><th>Prijs</th></tr>";
   let total = 0;
 
   cart.forEach((item, index) => {
     cartHTML += `
-      <tr>
-        <td>${item.naam}</td>
-        <td>€${item.prijs.toFixed(2)}</td>
-        <td><button onclick="removeFromCart(${index})">Verwijderen</button></td>
-      </tr>
-    `;
+             <tr>
+                <td>${item.naam}</td>
+                <td>€${item.prijs.toFixed(2)}</td>
+                     
+            </tr>
+        `;
     total += item.prijs;
   });
 
-  cartHTML += `</table><p><strong>Totaal: €${total.toFixed(2)}</strong></p>`;
+  cartHTML += `</table><div class="cart-total">Totaal: €${total.toFixed(2)}</div>`;
   cartContainer.innerHTML = cartHTML;
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', displayCart);
-} else {
-  displayCart();
+
+
+function clearCart() {
+  if (confirm("Weet je zeker dat je je winkelmandje wilt leegmaken?")) {
+    localStorage.removeItem("cart");
+    displayCart();
+  }
 }
+
+displayCart();

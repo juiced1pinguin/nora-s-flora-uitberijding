@@ -1,17 +1,16 @@
-
-const productGrid = document.getElementById('producten');
+const productGrid = document.getElementById("producten");
 
 function toonPlanten() {
   if (!productGrid) return;
 
   productGrid.innerHTML = "";
 
-  planten.forEach(plant => {
-    const productDiv = document.createElement('div');
-    productDiv.classList.add('product');
+  planten.forEach((plant) => {
+    const productDiv = document.createElement("div");
+    productDiv.classList.add("product");
 
     if (plant.groot) {
-      productDiv.classList.add('product-large');
+      productDiv.classList.add("product-large");
     }
 
     productDiv.innerHTML = `
@@ -26,7 +25,6 @@ function toonPlanten() {
   });
 }
 
-
 if (productGrid) {
   toonPlanten();
 }
@@ -39,7 +37,7 @@ function voegToe(id) {
 function addToCart(id) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const product = planten.find(p => p.id === id);
+  const product = planten.find((p) => p.id === id);
 
   if (product) {
     cart.push(product);
@@ -56,20 +54,18 @@ function updateCartCount() {
   }
 }
 
-
 function initializeCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   let total = 0;
 
-  cart.forEach(item => {
+  cart.forEach((item) => {
     total += item.prijs;
   });
 
   console.log("Cart total: €" + total.toFixed(2));
   updateCartCount();
 }
-
 
 initializeCart();
 
@@ -80,13 +76,13 @@ function removeFromCart(index) {
   location.reload();
 }
 
-
 function displayCart() {
   const cartContainer = document.getElementById("cartItems");
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
-    cartContainer.innerHTML = '<div class="empty-cart">Je winkelmandje is leeg. <br><a href="assortiment.html">Ga naar assortiment</a></div>';
+    cartContainer.innerHTML =
+      '<div class="empty-cart">Je winkelmandje is leeg. <br><a href="assortiment.html">Ga naar assortiment</a></div>';
     return;
   }
 
@@ -107,8 +103,6 @@ function displayCart() {
   cartHTML += `</table><div class="cart-total">Totaal: €${total.toFixed(2)}</div>`;
   cartContainer.innerHTML = cartHTML;
 }
-
-
 
 function clearCart() {
   if (confirm("Weet je zeker dat je je winkelmandje wilt leegmaken?")) {
